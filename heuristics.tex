@@ -6,10 +6,13 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{amsthm}
+\usepackage{xfrac}
 \usepackage{microtype,fixltx2e,ellipsis}
 \usepackage{lmodern}
 \usepackage{mathrsfs}
 \usepackage{enumerate}
+\usepackage{charter}
+
 
 \setkomafont{sectioning}{\bfseries} 
 
@@ -32,12 +35,20 @@ We lift some restrictions that were made in earlier discussions of quadric pairs
 
 \section{The Concept}
 
-As sketched in \ref{Alex:Th12}, the notion of \emph{distance} in the real plane given by nondegenerate symmetric bilinear forms can be rephrased using two quadrics
+As sketched in \ref{Alex:Th12}, for any distinguished point $\mathrm{P}$ in the real plane, the notion of \emph{distance} to this point given by nondegenerate symmetric bilinear forms can be rephrased employing two quadrics. These quadrics $Q_1, Q_2$ have to meet one of the two following requirements (with $N$ denoting the number of lines through $\mathrm{P}$ and $\mathscr{L}_\mathrm{P}$ their entirety):
+\begin{enumerate}[i.]
+\item{$Q_1 \cap Q_2 = \varnothing$. $\frac{N}{2}$ lines of $\mathscr{L}_\mathrm{P}$ intersect $Q_1$, the other half $Q_2$. Each line is thereby intersected twice by its respective quadric.\label{qp_prop_1}} 
+\item{$Q_1 \cap Q_2 = \{ \mathrm{R} \}$. Two lines of $\mathscr{L}_\mathrm{P}$ intersect the quadrics only in $\mathrm{R}$. For the remaining $N-2$ lines and the by $\mathrm{R}$ reduced quadrics, \ref{qp_prop_1}. holds.}
+\end{enumerate}
+
+This choice of quadrics serves twofold: First, a quadric naturally assigns to each point its respective line, namely its \emph{polar}, and vice versa. After choosing an ``infinity line'' $\ell_\infty$ in a projective plane $\mathscr{P}$ one can establish an addition on $\mathscr{P}\setminus\ell_\infty$ as well as a multiplication. This has been thoroughly studied in \cite{Beutelspacher}. Whether both quadrics yield the same polar is an important question to be addressed later on. 
+
+Second, every line in $\mathscr{P}\setminus\ell_\infty$ can be thought of as a field with addition and multiplication being the ones just mentioned. Therefore, a certain choice
 
 \section{Definiton of Pair Quadrics}
 
 After a more general introduction of the concept, the discussion of pair quadrics in \cite{Alex:Th12} was restricted by further assumptions, namely that (in an appropriate coordinatisation of the plane)
-\begin{enumerate}[i]
+\begin{enumerate}[i.]
 \item{both quadrics have the \emph{centre} $\mathrm{P}=\langle1,0,0\rangle$,}
 \item{the polar of $\mathrm{P}$ with respect to both quadrics is the line $\ell_\infty=\lbrack1,0,0\rbrack$, and}
 \item{both quadrics possess \emph{point symmetry} with respect to $\mathrm{P}$, i.e.\ for each $\mathrm{S}=\langle1,x_1,x_2\rangle$ in $Q$, the point $\mathrm{-S}=\langle1,-x_1,-x_2\rangle$ is also contained therein.\label{symmetry}}
