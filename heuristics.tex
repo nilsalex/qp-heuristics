@@ -20,20 +20,23 @@
 
 \theoremstyle{definition}
 \newtheorem{defi}{Definition}[section]
+\newtheorem{conj}{Conjecture}
+
+\renewenvironment{proof}{{\itshape Idea of proof.}}{}
 
 \begin{document}
 
-\title{Pairs of Quadrics as Metric Structure on Projective Planes}
+\title{Pairs of quadrics as metric structure on projective planes}
 \author{Nils Alex}
 \date{\today}
 
 \maketitle
 
 \begin{abstract}
-We lift some restrictions that were made in earlier discussions of quadric pairs in order to arrive at a fully (projective-)geometric treatment. Two generic properties of these pairs are proposed: Uniqueness of the centre and symmetry of the quadrics with respect to this centre.
+We lift some restrictions that were made in earlier discussions of quadric pairs as metric structure on projective planes in order to arrive at a fully (projective-)geometric treatment. Two generic properties of these pairs are proposed: Uniqueness of the centre and symmetry of the quadrics with respect to this centre.
 \end{abstract}
 
-\section{The Concept}
+\section{The concept}
 
 As sketched in \ref{Alex:Th12}, for any distinguished point $\mathrm{P}$ in the real plane, the notion of \emph{distance} to this point given by nondegenerate symmetric bilinear forms can be rephrased employing two quadrics. These quadrics $Q_1, Q_2$ have to meet one of the two following requirements (with $N$ denoting the number of lines through $\mathrm{P}$ and $\mathscr{L}_\mathrm{P}$ their entirety):
 \begin{enumerate}[i.]
@@ -41,34 +44,35 @@ As sketched in \ref{Alex:Th12}, for any distinguished point $\mathrm{P}$ in the 
 \item{$Q_1 \cap Q_2 = \{ \mathrm{R} \}$. Two lines of $\mathscr{L}_\mathrm{P}$ intersect the quadrics only in $\mathrm{R}$. For the remaining $N-2$ lines and the by $\mathrm{R}$ reduced quadrics, \ref{qp_prop_1}. holds.}
 \end{enumerate}
 
-This choice of quadrics serves twofold: First, a quadric naturally assigns to each point its respective line, namely its \emph{polar}, and vice versa. Second, the definition ensures that each non-tangential line through $\mathrm{P}$ is intersected exactly twice, which is singling out two further points. Of course this involves some ambiguities as the polars with respect to different quadrics can differ and we will only need one of the two intersection points. How to handle these will be addressed later on.
+This choice of quadrics serves twofold: First, a quadric naturally assigns to each point its respective line, namely its \emph{polar}, and vice versa. Second, the definition ensures that each non-tangential line through $\mathrm{P}$ is intersected exactly twice, which is singling out two further points. Of course this involves ambiguities as the polars with respect to different quadrics may differ and we will only need one of the two intersection points. How to handle these will be addressed later on.
 
 To see how this construction can be of use let us review a central result in synthetic geometry, following the thorough depiction in \cite{Beutelspacher}. After choosing an ``infinity line'' $\ell_\infty$ in a projective plane $\mathscr{P}$ one can establish an addition on $\mathscr{P}^*=\mathscr{P}\setminus\ell_\infty$ as well as a set of scalar multiplications. The latter forms a division ring $\mathrm{K}$ and therefore $\mathscr{P}^*$ equipped with addition and scalar multiplication is a $\mathrm{K}$-module $\mathrm{V}^*$. Furthermore, if \textsc{Desargues}' theorem holds, every line in $\mathscr{P}^*$ is a one-dimensional affine submodule of $\mathrm{V}^*$. $\mathrm{K}$ is not only a divison ring but even a field if additionally \textsc{Pappos}' theorem is fulfilled, which we will impose hereinafter for reasons discussed in \cite{Alex:Th12}.
 
-With the knowledge of a line in the affine subplane through the origin $\mathrm{O}=0_{\mathrm{V}^*}$ being a one-dimensional subspace of $\mathrm{V}^*$ it follows immediately that, \emph{after a choice of the multiplicative identity element}, this line is isomorphic to $\mathrm{K}$. That is to say, any affine point is assigned to a number in $\mathrm{K}$, but only with respect to an indeterminate identity. This number may be called the \emph{distance} to $\mathrm{O}$.\footnote{This gives rise to the same algebraic problems as encountered in \cite{AlKr:2013} concerning the lack of order in finite fields.}
+With the knowledge of a line in the affine subplane through the origin $\mathrm{O}=0_{\mathrm{V}^*}$ being a one-dimensional subspace of $\mathrm{V}^*$ it follows immediately that, \emph{after a choice of the multiplicative identity element}, this line is isomorphic to $\mathrm{K}$. That is to say, any affine point is assigned to a number in $\mathrm{K}$, but only with respect to an undetermined identity. This number may be called the \emph{distance} to $\mathrm{O}$.\footnote{This gives rise to the same algebraic problems as encountered in \cite{AlKr:2013} concerning the lack of an order relation on finite fields.}
 
-Making use of an infinity line (or, equivalently, infinity points on each line through $\mathrm{P}$) as well as unit points \emph{on each line in $\mathscr{L}_\mathrm{P}$}, this construction is far from unique. At this point the quadric pairs come into play as they provide the required extra structure to perform the construction. Note that the actual computation of distances can be realised in coordinates using \emph{cross-ratios} rather than executing each of the above steps (see \cite{AlKr:2013}).
+Making use of an infinity line (or, equivalently, infinity points on each line through $\mathrm{P}$) as well as unit points \emph{on each line in $\mathscr{L}_\mathrm{P}$}, this construction is far from unique. At this point the quadric pairs come into play as they provide the required extra structure to perform the construction. Note that the actual computation of distances can be realised in coordinates using \emph{cross-ratios} rather than executing each of the above steps (see \cite{AlKr:2013} for an account on this).
 
 This approach generalises earlier attempts where we restricted ourselves to a fix centre $\langle1,0,0\rangle$ and polar $\lbrack1,0,0\rbrack$ and imposed a symmetry condition regarding the coordinates of quadric points. While coordinate-free definitions are, aside from being more aesthetically pleasing, mostly a reformulation, the restriction to a certain polar \emph{is} crucial since a set-up with distinguished infinity line can barely be called \emph{projective}.
 
-\section{Definiton of Pair Quadrics}
+\section{Resolving the ambiguities}
+The use of quadric pairs is so far impaired by the already mentioned ambiguities, which will now be addressed in more detail. To begin with, we only need one intersection point on each line ion $\mathscr{L}_\mathrm{P}$ to define a unit point. However, the second intersection point is merely redundant since it is --- as suggested by observations in finite projective planes of small order --- just the \emph{negative} of the first point. So \emph{any quadric is symmetric with respect to any point} or strictly speaking:
 
-After a more general introduction of the concept, the discussion of pair quadrics in \cite{Alex:Th12} was restricted by further assumptions, namely that (in an appropriate coordinatisation of the plane)
-\begin{enumerate}[i.]
-\item{both quadrics have the \emph{centre} $\mathrm{P}=\langle1,0,0\rangle$,}
-\item{the polar of $\mathrm{P}$ with respect to both quadrics is the line $\ell_\infty=\lbrack1,0,0\rbrack$, and}
-\item{both quadrics possess \emph{point symmetry} with respect to $\mathrm{P}$, i.e.\ for each $\mathrm{S}=\langle1,x_1,x_2\rangle$ in $Q$, the point $\mathrm{-S}=\langle1,-x_1,-x_2\rangle$ is also contained therein.\label{symmetry}}
-\end{enumerate}
+\begin{conj}[Quadric symmetry]
+Let $Q$ be a nondegenerate quadric in the projective plane $\mathscr{P}$. Then for each point $\mathrm{P}\notin Q$ and each secant line $\ell\in\mathscr{L}_\mathrm{P}$ with $\mathrm{R}, \mathrm{S}$ denoting the intersection points of $Q$ and $\ell$ we have
+\begin{equation*}
+\mathrm{R} = -\mathrm{S}
+\end{equation*}
+with respect to the polar of $\mathrm{P}$ relative to $Q$ as infinity line.
 
-In a finite projective plane of order $n>3$ a point $\mathrm{P}$ is called a \emph{centre} with respect to a quadric pair $(Q_1,Q_2)$ if either
-\begin{enumerate}[{i}a]
-\item{$Q_1$ intersects exactly $\frac{N}{2}$ of the lines incident with $\mathrm{P}$, $Q_2$ the other half. }
-\end{enumerate}
+\begin{proof}
+Straightforward calculation.
+\end{proof}
+\end{conj}
 
-While whe want to maintain (\ref{symmetry}) (but rephrase it generically (see \ref{sect:symmetry}), the first two assumptions are very crucial: We equipped the projective plane with a distinguished line
+This leaves us with the problem of choosing one of two provided polars. The simplest resultion is to just \emph{impose uniqueness of the polars} as another restriction on a quadric pair, which is further justified by the following observation:
 
-\begin{defi}
-bla
-\end{defi}
+\begin{conj}[Centre uniqueness]
+The centre is unique.
+\end{conj}
 
 \end{document}
