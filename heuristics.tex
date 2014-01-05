@@ -23,7 +23,7 @@
 
 \begin{document}
 
-\title{Pairs of Quadrics: Heuristics}
+\title{Pairs of Quadrics as Metric Structure on Projective Planes}
 \author{Nils Alex}
 \date{\today}
 
@@ -41,9 +41,13 @@ As sketched in \ref{Alex:Th12}, for any distinguished point $\mathrm{P}$ in the 
 \item{$Q_1 \cap Q_2 = \{ \mathrm{R} \}$. Two lines of $\mathscr{L}_\mathrm{P}$ intersect the quadrics only in $\mathrm{R}$. For the remaining $N-2$ lines and the by $\mathrm{R}$ reduced quadrics, \ref{qp_prop_1}. holds.}
 \end{enumerate}
 
-This choice of quadrics serves twofold: First, a quadric naturally assigns to each point its respective line, namely its \emph{polar}, and vice versa. After choosing an ``infinity line'' $\ell_\infty$ in a projective plane $\mathscr{P}$ one can establish an addition on $\mathscr{P}\setminus\ell_\infty$ as well as a multiplication. This has been thoroughly studied in \cite{Beutelspacher}. Whether both quadrics yield the same polar is an important question to be addressed later on. 
+This choice of quadrics serves twofold: First, a quadric naturally assigns to each point its respective line, namely its \emph{polar}, and vice versa. Second, the definition ensures that each non-tangential line through $\mathrm{P}$ is intersected exactly twice, which is singling out two further points. Of course this involves some ambiguities as the polars with respect to different quadrics can differ and we will only need one of the two intersection points. How to handle these will be addressed later on.
 
-Second, every line in $\mathscr{P}\setminus\ell_\infty$ can be thought of as a field with addition and multiplication being the ones just mentioned. Therefore, a certain choice
+To see how this construction can be of use let us review a central result in synthetic geometry, following the thorough depiction in \cite{Beutelspacher}. After choosing an ``infinity line'' $\ell_\infty$ in a projective plane $\mathscr{P}$ one can establish an addition on $\mathscr{P}^*=\mathscr{P}\setminus\ell_\infty$ as well as a set of scalar multiplications. The latter forms a division ring $\mathrm{K}$ and therefore $\mathscr{P}^*$ equipped with addition and scalar multiplication is a $\mathrm{K}$-module $\mathrm{V}^*$. Furthermore, if \textsc{Desargues}' theorem holds, every line in $\mathscr{P}^*$ is a one-dimensional affine submodule of $\mathrm{V}^*$. $\mathrm{K}$ is not only a divison ring but even a field if additionally \textsc{Pappos}' theorem is fulfilled, which we will impose hereinafter for reasons discussed in \cite{Alex:Th12}.
+
+With the knowledge of a line in the affine subplane through the origin $\mathrm{O}=0_{\mathrm{V}^*}$ being a one-dimensional subspace of $\mathrm{V}^*$ it follows immediately that, \emph{after a choice of the multiplicative identity element}, this line is isomorphic to $\mathrm{K}$. That is to say, any affine point is assigned to a number in $\mathrm{K}$, but only with respect to an indeterminate identity.
+
+For the second use of these two quadrics let us review a central theorem in synthetic geometry: The scalar multiplications on $\mathscr{P}^*$ form a division ring $\mathrm{K}$, 
 
 \section{Definiton of Pair Quadrics}
 
