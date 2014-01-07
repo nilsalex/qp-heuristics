@@ -28,25 +28,27 @@
 	Author = {Alex, Nils},
 	School = {FAU Erlangen-N{\"u}rnberg},
 	Title = {Quadriken in endlichen projektiven {E}benen},
-	Type = {Bachelorarbeit},
+	Type = {Bachelor's Thesis},
 	Year = {2012}}
 
 @book{Beutelspacher:2004,
 	Address = {Wiesbaden},
-	Author = {Beutelspacher, A and Rosenbaum, U},
-	Edition = {2. Auflage},
+	Author = {Beutelspacher, A. and Rosenbaum, U.},
+	Edition = {2nd},
 	Publisher = {Vieweg},
 	Title = {Projektive {G}eometrie},
 	Year = {2004}}
 
-@article{AlKr:2013,
-	Author = {Alex, Nils and Kr{\"u}ger, Benedikt},
+@misc{AlKr:2013,
+	Author = {{Nils Alex and Benedikt Kr{\"u}ger (FAU Erlangen-N{\"u}rnberg)}},
 	Title = {Seiteneinteilungen und {D}oppelverh{\"a}ltnisse in endlichen projektiven {E}benen},
+	howpublished = {unpublished},
 	Year = {2013}}
 
-@article{Alex:2013,
-	Author = {Alex, Nils},
+@misc{Alex:2013,
+	Author = {{Nils Alex (FAU Erlangen-N{\"u}rnberg)}},
 	Title = {Endliche projektive {E}benen: {D}oppelverh{\"a}ltnis und {A}bstandsfunktion},
+	howpublished = {unpublished},
 	Year = {2013}}
 \end{filecontents}
 
@@ -73,9 +75,9 @@ As sketched in \cite{Alex:Th12, Alex:2013}, for any distinguished point $\mathrm
 
 This choice of quadrics serves twofold: First, a quadric naturally assigns to each point its respective line, namely its \emph{polar}, and vice versa. Second, the definition ensures that each non-tangential line through $\mathrm{P}$ is intersected exactly twice, which is singling out two further points. Of course this involves ambiguities as the polars with respect to different quadrics may differ and we will only need one of the two intersection points. How to handle these will be addressed later on.
 
-To see how this construction can be of use let us review a central result in synthetic geometry, following the thorough depiction in \cite{Beutelspacher:2004}. After choosing an ``infinity line'' $\ell_\infty$ in a projective plane $\mathscr{P}$ one can establish an addition on $\mathscr{P}^*=\mathscr{P}\setminus\ell_\infty$ as well as a set of scalar multiplications. The latter forms a division ring $\mathrm{K}$ and therefore $\mathscr{P}^*$ equipped with addition and scalar multiplication is a $\mathrm{K}$-module $\mathrm{V}^*$. Furthermore, if \textsc{Desargues}' theorem holds, every line in $\mathscr{P}^*$ is a one-dimensional affine submodule of $\mathrm{V}^*$. $\mathrm{K}$ is not only a divison ring but even a field if additionally \textsc{Pappos}' theorem is fulfilled, which we will impose hereinafter for reasons discussed in \cite{Alex:Th12}.
+To see how this construction can be of use in general projective planes let us review a central result in synthetic geometry, following the thorough depiction in \cite{Beutelspacher:2004}. After choosing an ``infinity line'' $\ell_\infty$ in a projective plane $\mathscr{P}$ one can establish an addition on $\mathscr{P}^*=\mathscr{P}\setminus\ell_\infty$ as well as a set of scalar multiplications. The latter forms a division ring $\mathrm{K}$ and therefore $\mathscr{P}^*$ equipped with addition and scalar multiplication is a $\mathrm{K}$-module $\mathrm{V}^*$. Furthermore, if \textsc{Desargues}' theorem holds, every line in $\mathscr{P}^*$ is a one-dimensional affine submodule of $\mathrm{V}^*$. $\mathrm{K}$ is not only a divison ring but even a field if additionally \textsc{Pappos}' theorem is fulfilled, which we will impose hereinafter for reasons discussed in \cite{Alex:Th12}.
 
-With the knowledge of a line in the affine subplane through the origin $\mathrm{O}=0_{\mathrm{V}^*}$ being a one-dimensional subspace of $\mathrm{V}^*$ it follows immediately that, \emph{after a choice of the multiplicative identity element}, this line is isomorphic to $\mathrm{K}$. That is to say, any affine point is assigned to a number in $\mathrm{K}$, but only with respect to an undetermined identity. This number may be called the \emph{distance} to $\mathrm{O}$.\footnote{This gives rise to the same algebraic problems as encountered in \cite{AlKr:2013} concerning the lack of an order relation on finite fields.}
+With the knowledge of a line in the affine subplane through the origin $\mathrm{O}=0_{\mathrm{V}^*}$ being a one-dimensional subspace of $\mathrm{V}^*$ it follows immediately that, \emph{after a choice of the multiplicative identity element}, this line is isomorphic to $\mathrm{K}$. That is to say, any affine point is assigned to a number in $\mathrm{K}$, but only with respect to an undetermined identity. This number may be called the \emph{distance} to $\mathrm{O}$.\footnote{Of course, this gives rise to the same algebraic problems as encountered in \cite{AlKr:2013}, concerning the lack of an order relation on finite fields.}
 
 Making use of an infinity line (or, equivalently, infinity points on each line through $\mathrm{P}$) as well as unit points \emph{on each line in $\mathscr{L}_\mathrm{P}$}, this construction is far from unique. At this point the quadric pairs come into play as they provide the required extra structure to perform the construction. Note that the actual computation of distances can be realised in coordinates using \emph{cross-ratios} rather than executing each of the above steps (see \cite{Alex:2013} for an account on this).
 
@@ -89,18 +91,35 @@ Let $Q$ be a nondegenerate quadric in the projective plane $\mathscr{P}$. Then f
 \begin{equation*}
 \mathrm{R} = -\mathrm{S}
 \end{equation*}
-with respect to the polar of $\mathrm{P}$ relative to $Q$ as infinity line.
+with respect to $\mathrm{P}$ as additive identity and the polar of $\mathrm{P}$ relative to $Q$ as infinity line.
 
 \begin{proof}
 Straightforward calculation.
 \end{proof}
 \end{conj}
 
-This leaves us with the problem of choosing one of two provided polars. The simplest resolution is to just \emph{impose uniqueness of the polars} as another restriction on a quadric pair, which is further justified by the following observation: We may call a point a \emph{centre} of two arbitrarily chosen quadrics if conditions i. and ii. in the definition of quadric pairs hold with respect to this point. Of course, there may be no such centre (e.g. if the quadrics intersect in one point since the definition requires no intersection points or exactly 2) or even more than one. An exhaustive analysis of all combinations in planes up to order 13 showed the existence of pairs with \emph{two} centres. If however we call only points with the same polar to both quadrics a centre
+This leaves us with the problem of choosing one of two provided polars. The simplest resolution is to just \emph{impose uniqueness of the polars} as another restriction on a quadric pair, which is further justified by the following observation: We may call a point a \emph{centre} of two arbitrarily chosen quadrics if conditions i. and ii. in the definition of quadric pairs hold with respect to this point. Of course, there may be no such centre (e.g. if the quadrics intersect in one point, since the definition requires either no intersection points to exist or exactly 2) or even more than one. An exhaustive analysis of all combinations in planes up to order 13 showed the existence of pairs with \emph{two} centres. If however we call only points with the \emph{same} polar to both quadrics a centre, it seems that this centre is now (if existent at all) uniquely defined.
+
+In numbers, for orders $p=3,5,7,11,13$ and \emph{with} the extra condition,
+\begin{equation*}
+(p-1)\times p^2
+\end{equation*}
+quadric pairs can found, all of which having exactly one centre. Regarding this centre, $\frac{(p-1)^2p}{2}$ pairs are elliptical and the remaining $\frac{(p-1)p(p+1)}{2}$ pairs are hyperbolical.
+
+Without further condition, the number of hyperbolic pairs remains the same and there are no further pairs with more than one centre. The number of elliptical pairs turns out to be significantly larger, as there now are not only $\frac{(p-1)^2p(p+1)^2}{4}$ additional pairs with one centre but also $\frac{(p-3)(p-1)^2p(p+1)}{8}$ pairs with \emph{two} centres.
+
+Note that the formulae are a priori only valid in the specified range for $p$. Also they refer to pairs with the first quadric being one of two fixed, mutually projective inequivalent quadrics, as any arbitrary pair arises from these by projective transformation. That hyperbolic pairs are unimpressed by the demand for equal polar lines simply reflects the fact that such pairs share two points and these points already determine the polar for a possible centre, which therefore redudantises this condition. 
 
 \begin{conj}[Centre uniqueness]
-The centre is unique.
+Two nondegenerate quadrics in a finite projective plane of order $p$ define at most \emph{one} centre point for which the polars with respect to both quadrics are identical. The number of such pairs with exactly one centre amounts to $(p-1)\times p^2$, up to projective transformation.
 \end{conj}
+
+\section{Outlook}
+Taking the conjectures for granted, the concept of quadric pairs remains very promising for defining metrics on projective planes similar to those on Euclidean or Lorentzian planes. Because we lifted an earlier restriction on the ``infinity line'' and even replaced the symmetry condition, which made use of this infinity line, by a more abstract one, our generalised set-up now really deserves the name \emph{projective}. Of course, to be certain of this, rigorous proofs yet have to be (!!word missing!!).
+
+So far we employ a quadric pair to measure distances on lines through its centre. Remembering that \emph{any} affine line resembles the coordinate field, there may be a possibility to measure distances to a point with respect to quadric pair and polar of a \emph{different} point, which future research could also pursue.
+
+The question of how to interpret numbers in unordered fields as distances still arises and must be left unsettled here, asking for future attention as well.
 
 \bibliographystyle{plainnat}
 \bibliography{\jobname.bib}
